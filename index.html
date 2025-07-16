@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
+    <title>million dollar website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+        
+        .ca-box {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 8px 12px;
+            border: 2px solid #2c3e50;
+            background: #f8f9fa;
+            color: #2c3e50;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        
+        .container {
+            text-align: center;
+            position: relative;
+        }
+        
+        .main-text {
+            font-size: 4rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        
+        .dollar-sign {
+            color: #34495e;
+            font-size: 5rem;
+            display: inline-block;
+            font-weight: 300;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+            }
+            to {
+                text-shadow: 0 0 30px rgba(255, 215, 0, 1), 0 0 40px rgba(255, 215, 0, 0.8);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+        
+        .sparkle {
+            display: none;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .sparkle:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+        .sparkle:nth-child(2) { top: 30%; right: 15%; animation-delay: 0.3s; }
+        .sparkle:nth-child(3) { bottom: 25%; left: 20%; animation-delay: 0.6s; }
+        .sparkle:nth-child(4) { bottom: 40%; right: 10%; animation-delay: 0.9s; }
+        .sparkle:nth-child(5) { top: 10%; left: 50%; animation-delay: 1.2s; }
+        
+        @media (max-width: 768px) {
+            .main-text {
+                font-size: 2.5rem;
+            }
+            .dollar-sign {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ca-box">CA:</div>
+    
+    <div class="container">
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        <div class="sparkle"></div>
+        
+        <h1 class="main-text">
+            million dollar website
+        </h1>
+    </div>
+</body>
+</html>
